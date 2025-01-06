@@ -5,12 +5,13 @@ import {Component} from '@angular/core';
     {
         selector : "app-navbar",
         standalone : true,
-        template : 
-        `
-        <h1>Navbar Component</h1> 
-        <p>Dummy Paragraph </p> 
-        <button> Submit </button>
-        `,
+        // template : 
+        // `
+        // <h1>Navbar Component</h1> 
+        // <p>Dummy Paragraph </p> 
+        // <button> Submit </button>
+        // `,
+        templateUrl : './navbar.component.html',
         styles: "h1{color : red; background : black}"
     }
 )

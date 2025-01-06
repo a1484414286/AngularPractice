@@ -1,0 +1,26 @@
+<p>header works!</p>
+
+<h1>{{titleVariable}}</h1>
+
+<button disabled="{{isDisabled}}">String Interpolation</button>
+<button [disabled]="isDisabled">Property Binding</button>
+
+
+
+<!-- class binding -->
+<button (click)="isActive = !isActive" [class.not-active] = "!isActive" [class.active] = "isActive">Click Me</button>
+<button (click)="handleToggle()" [class.not-active] = "!isActive" [class.active] = "isActive">Click Me</button>
+
+
+<!-- style binding -->
+<button 
+[style.background-color]="fruitName == 'apple' ? 'red' : 'green'"
+[style.border] = "isActive ? '3px solid yellow' : ''"
+>friutNinja</button>
+
+<div></div>
+<!-- event binding-->
+<button (mouseover)="buttonClick()">Event Binding Button</button>
+
+<!-- chooses event based on variable, "keyup" -->
+<input type="text" (keyup)="keyEnter($event)">
